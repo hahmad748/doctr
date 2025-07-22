@@ -23,7 +23,7 @@ _BASE_VOCABS = {
     # Arabic & Persian
     "arabic_diacritics": "".join(["ً", "ٌ", "ٍ", "َ", "ُ", "ِ", "ّ", "ْ", "ٕ", "ٓ", "ٔ", "ٚ"]),
     "arabic_digits": "٠١٢٣٤٥٦٧٨٩",
-    "arabic_letters": "ءآأؤإئابةتثجحخدذرزسشصضطظعغـفقكلمنهوىيٱ",
+    "arabic_letters": "ءآأؤإئابةتثجحخدذرزسشصضطظعغـفقكلمنهوىيٱ ﻷﻻﻹ",
     "arabic_punctuation": "؟؛«»—،",
     "persian_letters": "پچژڢڤگکی",
     # Bengali
@@ -483,6 +483,7 @@ VOCABS["arabic"] = (
     + _BASE_VOCABS["arabic_diacritics"]
     + _BASE_VOCABS["arabic_punctuation"]
     + _BASE_VOCABS["punctuation"]
+    + _BASE_VOCABS["currency"]
 )
 
 VOCABS["persian"] = VOCABS["arabic"]
